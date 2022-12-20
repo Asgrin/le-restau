@@ -1,0 +1,187 @@
+.menu {
+  padding-top: 700px;
+  .menu-container {
+    position: relative;
+    margin: 0 auto;
+    z-index: 5;
+
+    .menu-container-head {
+      width: 60%;
+      margin: 0 auto 50px;
+      text-align: center;
+      position: relative;
+      h4 {
+        @include title;
+        font-size: 2.5rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 120px;
+
+        &::after {
+          position: absolute;
+          content: "";
+          background: url(../img/ic-plate.png) no-repeat center/cover;
+          height: 50px;
+          width: 50px;
+          top: 30%;
+          left: 50%;
+          transform: translateX(-50%) scale(0.8);
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 75%;
+
+        li {
+          margin: 0 5px;
+          padding: 15px;
+          justify-content: center;
+          color: $white1;
+          font-family: $font3;
+          font-size: 1.3rem;
+          a {
+            position: relative;
+            height: 100%;
+            width: 100%;
+
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              background: $white1;
+              bottom: -20px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+    .menu-container-div {
+      position: absolute;
+      width: 100%;
+      top: -450px;
+    }
+    .menu-container-menu {
+      border-top: 5px solid $orange1;
+      background: $white1;
+      width: 55%;
+      height: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 10px;
+      grid-template-rows: repeat(4, 1fr);
+      align-items: center;
+      z-index: +200;
+      .div-border {
+        position: relative;
+      }
+      .div-border::after {
+        content: "";
+        position: absolute;
+        width: 90%;
+        bottom: -40px;
+        border-style: dashed;
+        border-width: 1px;
+        color: $grey1;
+      }
+      & div {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        // display: grid;
+        // grid-template-columns: 25% 50% 25%;
+        // grid-template-areas: "img mn mp";
+
+        .menu-name {
+          font-family: $font3;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-bottom: 5px;
+          font-size: 1.1rem;
+        }
+        .menu-content {
+          font-family: $font3;
+          font-size: 1.3rem;
+        }
+        p {
+          font-family: $font3;
+          color: $orange1;
+          font-weight: 600;
+          font-size: 1.3rem;
+        }
+        p {
+          align-items: center;
+          display: flex;
+        }
+
+        .menu-container-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+
+      .menu-container-img1 {
+        border-radius: 50px;
+        height: 110px;
+        width: 110px;
+        background: url(../img/dish-item-01.jpg) center/cover;
+      }
+      .menu-container-img2 {
+        border-radius: 50px;
+        height: 110px;
+        width: 110px;
+        background: url(../img/dish-item-02.jpg) center/cover;
+      }
+      .menu-container-img3 {
+        border-radius: 50px;
+        height: 110px;
+        width: 110px;
+        background: url(../img/dish-item-03.jpg) center/cover;
+      }
+      .menu-container-img4 {
+        border-radius: 50px;
+        height: 110px;
+        width: 110px;
+        background: url(../img/dish-item-04.jpg) center/cover;
+      }
+      .menu-container-img5 {
+        border-radius: 50px;
+        height: 110px;
+        width: 110px;
+        background: url(../img/dish-item-05.jpg) center/cover;
+      }
+      .menu-container-img6 {
+        border-radius: 50px;
+        height: 110px;
+        width: 110px;
+        background: url(../img/dish-item-06.jpg) center/cover;
+      }
+      .menu-container-img7 {
+        border-radius: 50px;
+        height: 110px;
+        width: 110px;
+        background: url(../img/dish-item-07.jpg) center/cover;
+      }
+      .menu-container-img8 {
+        border-radius: 50px;
+        height: 110px;
+        width: 110px;
+        background: url(../img/dish-item-08.jpg) center/cover;
+      }
+    }
+  }
+  .menu-container-bg {
+    background: url(../img/bg-menu-01.jpg) center/cover;
+    width: 100%;
+    height: 800px;
+    z-index: -100;
+    margin-top: -200px;
+  }
+}

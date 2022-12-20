@@ -1,0 +1,106 @@
+footer {
+  height: 650px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  .footer-bg-1 {
+    margin-top: -150px;
+    background: url(../img/gmap.jpg) center/cover;
+    z-index: -1;
+    position: relative;
+  }
+  .footer-bg-2 {
+    background: url(../img/bg-footer.jpg) center/cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .footer-text {
+      margin: 25px 0 0 260px;
+      padding: 45px;
+      h4 {
+        @include title;
+        font-size: 3rem;
+        font-weight: 200;
+      }
+      p {
+        color: $grey1;
+        line-height: 35px;
+        font-family: $font3;
+        font-weight: 200;
+        font-size: 1.1rem;
+      }
+    }
+    .newletter {
+      padding: 60px;
+    }
+    .newletter-container {
+      display: grid;
+      grid-template-rows: 33% 33% 33%;
+      align-items: center;
+      h5 {
+        color: $white1;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: $font2;
+        font-weight: 400;
+        margin: 20px 0;
+      }
+      input[type="text"] {
+        width: 50%;
+        border: 1px solid $orange2;
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 10px 80px 10px 15px;
+        background: none;
+        font-family: $font3;
+      }
+      input[type="text"]:focus {
+        color: $orange1;
+        outline: none;
+        border: 1px solid $orange2;
+        border-radius: 5px;
+      }
+      input[type="submit"] {
+        border: 1px solid $orange2;
+        border-radius: 5px;
+        outline: none;
+        width: 25%;
+        background: none;
+        color: $grey2;
+        font-family: $font3;
+        font-weight: 100;
+      }
+      input[type="submit"]:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+      input[type="submit"]:active {
+        transform: scale(1);
+      }
+    }
+    .reseau {
+      display: flex;
+      align-items: center;
+      h5 {
+        color: $white1;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: $font2;
+        font-weight: 400;
+        margin: 20px 0;
+      }
+      ul {
+        display: flex;
+
+        li {
+          display: flex;
+          justify-content: space-around;
+          margin: 0 25px;
+
+          a {
+            color: $grey2;
+          }
+        }
+      }
+    }
+  }
+}

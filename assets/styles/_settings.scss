@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "font-spe";
+  src: url(../font/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "font2";
+  src: url(../font/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "font3";
+  src: url(../font/Roboto-Light.ttf);
+}
+
+$font1: font-spe;
+$font2: font2;
+$font3: font3;
+$orange1: rgb(166, 114, 69);
+$orange2: hwb(27 15% 62% / 0.712);
+$white1: rgb(238, 238, 238);
+$black1: rgb(0, 0, 0);
+$black2: rgb(33, 32, 30);
+$grey1: rgb(182, 182, 182);
+$grey2: rgb(150, 150, 150);
+@mixin title {
+  font-family: $font1;
+  color: $orange1;
+  letter-spacing: 2px;
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: $black2;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a,
+a:visited {
+  color: $white1;
+}

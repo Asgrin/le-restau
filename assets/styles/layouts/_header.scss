@@ -1,0 +1,99 @@
+header {
+  position: relative;
+  height: 900px;
+  width: 100%;
+  position: relative;
+  background: url(../img/bg-slider-06.jpg) center/cover;
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 25px;
+    width: 90%;
+
+    span {
+      @include title;
+      color: $white1;
+      font-size: 3rem;
+      font-weight: 900;
+      align-items: center;
+      margin: 0 15px;
+      letter-spacing: 0px;
+    }
+
+    ul {
+      @include center;
+    }
+    .header-menu {
+      display: flex;
+      margin: 0 70px;
+
+      li {
+        font-family: $font3;
+        margin: 0 50px;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+      }
+      li:first-child {
+        margin-left: 40px;
+      }
+      li:last-child {
+        margin-right: 40px;
+      }
+    }
+    .header-reseaux {
+      margin: 0 15px;
+
+      li {
+        margin: 0 12px;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    li:hover,
+    a:hover {
+      transform: scale(1.1);
+      color: $orange1;
+    }
+  }
+
+  h1 {
+    @include title;
+    @include center;
+    font-size: 3.5rem;
+    margin-top: 150px;
+    font-weight: 400;
+  }
+  h2 {
+    font-family: $font2;
+    color: $white1;
+    @include center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 600;
+    margin-top: -30px;
+  }
+  p {
+    @include center;
+    color: $white1;
+    font-family: $font3;
+    font-size: 0.9rem;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    margin-top: 120px;
+
+    &::before {
+      content: url(../img/ic-plate-big.png);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) scale(0.8);
+    }
+  }
+}
